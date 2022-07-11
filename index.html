@@ -1,0 +1,96 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/efe3bad253.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Presentation</title>
+  </head>
+  <body>
+    <!-- Page 1 Intro -->
+    <section id="page1" class="page">
+      <h1>My Presentation</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos fugiat praesentium unde quo odit nam totam eos molestias. Quos aperiam minus itaque necessitatibus veniam adipisci nesciunt. Voluptas cumque corrupti minima ipsa quisquam ex, mollitia, facere repellat labore perferendis doloribus error?</p>
+      <div>
+        <a href="#page2" class="btn">
+        Next Page <i class="fas fa-arrow-circle-down"></i> 
+      </a>
+      </div>
+    
+    </section>
+
+    <!-- Page 2 -->
+    <section id="page2" class="page">
+      <h1>Page 2</h1>
+      <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quibusdam soluta laboriosam dolorem explicabo ad vel natus ab veniam voluptates voluptas ullam mollitia, et quidem ipsa facilis tenetur aliquam quisquam!</P>      
+    
+      <div>
+        <a href="#page1" class="btn btn-dark" >
+        Prev Page <i class="fas fa-arrow-circle-up"></i> 
+      </a>
+        <a href="#page3" class="btn">
+        Next Page <i class="fas fa-arrow-circle-down"></i> 
+      </a>
+      </div>
+    
+    
+    
+    
+    </section>
+
+
+    <!-- Page 3 -->
+    <section id="page3" class="page">
+      <h1>Page 3</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos fugiat praesentium unde quo odit nam totam eos molestias. Quos aperiam minus itaque necessitatibus veniam adipisci nesciunt. Voluptas cumque corrupti minima ipsa quisquam ex, mollitia, facere repellat labore perferendis doloribus error?</p>
+      <div>
+        <a href="#page2" class="btn btn-dark">
+        Prev Page <i class="fas fa-arrow-circle-up"></i> 
+      </a>
+        <a href="#page4" class="btn">
+        Next Page <i class="fas fa-arrow-circle-down"></i> 
+      </a>
+      </div>
+    
+    
+    
+    
+    </section>
+    
+    <!-- Page 4 -->
+    <section id="page4" class="page">
+      <h1>Page 4</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos fugiat praesentium unde quo odit nam totam eos molestias. Quos aperiam minus itaque necessitatibus veniam adipisci nesciunt. Voluptas cumque corrupti minima ipsa quisquam ex, mollitia, facere repellat labore perferendis doloribus error?</p>
+      <div>
+        <a href="#page3" class="btn btn-dark">
+        Prev Page <i class="fas fa-arrow-circle-up"></i> 
+      </a>
+      </div>    
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
+    <!-- Smoothe  scrolling -->
+    <script>
+    $('.btn').on('click', function (event) {
+      if (this.hash !== '')  {
+        event.preventDefault();
+        const hash = this.hash;
+        $('html, body').animate(
+          {
+            scrollTop: $(hash).offset().top
+          },
+          800
+        );
+      }
+    });
+    
+    
+    
+    
+    
+    
+    </script>
+  </body>
+  </html>
